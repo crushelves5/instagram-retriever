@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container{
+display:grid;
+grid-template-columns: 100px 100px 100px 100px;
+grid-gap:10px;
+background-color: rgb(250,250,250);
+justify-content:center;
+align-content:center;
+}
+.grid-container > div{
+background-color: rgb(250,250,250);
+padding : 10px 0px;
+font-size: 30px;
+text-align:center;
+}
+.grid-container > div > img{
+width:100px;
+}
+</style>
+
+<script src="backendscript.js"></script>
+</head>
+	<body style="background-color: rgb(250,250,250); ">
+	<div style="margin-bottom:20px">
+		<form>
+		<input id="input" type="text">
+		</form>
+	</div>
+	<button onclick="getInstagram()"> Import </button>
+	<header id ="header"></header><br>
+	<div id="container" class="grid-container">
+
+
+
+	
+	</div>
+	
+	</body>
+</html>
